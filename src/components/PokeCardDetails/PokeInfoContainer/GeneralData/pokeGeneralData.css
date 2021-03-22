@@ -1,0 +1,13 @@
+
+.GeneralInfo-description{
+   width: 90%;
+   text-align: justify;
+   margin: 10px 0px;
+   font-size: .8rem;
+}
+
+.GeneralInfo-weight_height{
+   display: flex;
+   justify-content: space-evenly;;
+   
+}

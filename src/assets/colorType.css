@@ -1,0 +1,120 @@
+.fire{
+    background: linear-gradient(160.12deg, #CA377D 0.53%, #F45A71 94.86%);
+}
+.fire-shadow{
+    box-shadow: 0px 35px 80px rgba(255, 0, 61, 0.5);
+}
+
+.water{
+    background: linear-gradient(160.12deg, #5E4FB8 0.53%, #3C89F3 94.86%);
+}
+.water-shadow{
+    box-shadow: 0px 35px 80px rgba(67, 131, 255, 0.5);
+}
+
+.electric{
+    background: linear-gradient(160.12deg, #FF9900 0.53%, #EDC800 95.86%);
+}
+.electric-shadow{
+    box-shadow: 0px 35px 80px rgba(252, 161, 0, 0.5);
+}
+
+.ice{
+    background: linear-gradient(140.43deg, #4056A5 6.95%, #13C6DE 91.54%);
+}
+.ice-shadow{
+    box-shadow: 0px 35px 80px rgba(27, 178, 212, 0.5);
+}
+.bug{
+    background: linear-gradient(160.12deg, #52E74F 0.53%, #25681F 94.86%);
+}
+.bug-shadow{
+    box-shadow: 0px 35px 80px rgba(127, 202, 67, 0.5);
+}
+
+.fighting{
+    background: linear-gradient(140.43deg, #DF5667 6.95%, #9F5016 91.54%);
+}
+.fighting-shadow{
+    box-shadow: 0px 35px 80px rgba(168, 80, 33, 0.5);
+}
+
+.poison{
+    background: linear-gradient(160.12deg, #8E1391 0.53%, #AA3C85 95.86%);
+}
+.poison-shadow{
+    box-shadow: 0px 35px 80px rgba(145, 24, 143, 0.5);
+}
+.ground{
+    background: linear-gradient(160.12deg, #962A44 0.53%, #A34713 95.86%);
+}
+.ground-shadow{
+    box-shadow: 0px 35px 80px rgba(160, 65, 28, 0.5);
+}
+.fairy{
+    background: linear-gradient(160.12deg, #D123AB 0.53%, #DF8CBB 95.86%);
+}
+.fairy-shadow{
+    box-shadow: 0px 35px 80px rgba(211, 54, 174, 0.5);
+}
+
+.normal{
+    background: linear-gradient(140.43deg, #F7C4A7 6.95%, #F47E60 91.54%);
+}
+.normal-shadow{
+    box-shadow: 0px 35px 80px rgba(245, 152, 123, 0.5);
+}
+
+.grass{
+    background: linear-gradient(160.12deg, #52E74F 0.53%, #25681F 94.86%);
+}
+.grass-shadow{
+    box-shadow: 0px 35px 80px rgba(66, 188, 62, 0.5);
+}
+
+.flying{
+    background-color: #a8fff9;
+}
+.flying_stats{
+    background-color: #01ffee;
+}
+.rock{
+    background: linear-gradient(140.43deg, #A07C80 6.95%, #524D4E 86.7%);
+}
+.rock-shadow{
+    box-shadow: 0px 35px 80px rgba(150, 117, 121, 0.5);
+}
+
+.ghost{
+    background: linear-gradient(160.12deg, #3B0A3C 0.53%, #A275C6 95.86%);
+}
+.ghost-shadow{
+    box-shadow: 0px 35px 80px rgba(142, 96, 170, 0.5);
+}
+
+.dragon{
+    background: linear-gradient(140.43deg, #F47E60 6.95%, #F45A71 91.54%);
+}
+.dragon-shadow{
+    box-shadow: 0px 35px 80px rgba(244, 110, 103, 0.5);
+}
+
+.dark{
+    background: linear-gradient(160.12deg, #2D2588 0.53%, #6C309B 95.86%);
+}
+.dark-shadow{
+    box-shadow: 0px 35px 80px rgba(134, 54, 171, 0.5);
+}
+.steel{
+    background: linear-gradient(140.43deg, #C8B1B4 6.95%, #686766 91.54%);
+}
+.steel-shadow{
+    box-shadow: 0px 35px 80px rgba(192, 171, 173, 0.5);
+}
+
+.psychic{
+    background: linear-gradient(140.43deg, #610BB6 6.95%, #D63F87 91.54%);
+}
+.psychic-shadow{
+    box-shadow: 0px 35px 80px rgba(198, 56, 141, 0.5);
+}

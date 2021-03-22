@@ -1,0 +1,58 @@
+.evolutionChain{
+    margin: 10px 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.evolutionChain-icon{
+    height: 40px;
+    width: auto;
+}
+.evolutionChain-card{
+
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90px;
+    width: 90px;
+}
+
+.evolutionChain-card-image{
+    border: solid 2px white;
+    border-radius: 50%;
+    background: radial-gradient(113% 276.25% at 6.15% 9.5%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 99.48%);
+    box-sizing: border-box;
+    backdrop-filter: blur(24px);
+    height: 70px;
+    width: auto;
+}
+.evolutionChain-card-name{
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 800px){
+    .evolutionChain-icon{
+        width: 15px;
+        height: auto;
+    }
+    .evolutionChain-card{
+        display: grid;
+        place-items: center;
+        height: 70px;
+        width: 70px;
+    }
+
+    .evolutionChain-card-name{
+        display: none;
+    }
+    .evolutionChain-card-image{
+        border-radius: 50%;
+        height: 60px;
+        overflow: hidden;
+        width: auto;
+    }
+}

@@ -1,0 +1,45 @@
+
+.pokeList-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .pokeList{
+     width: 100%;
+    margin: 1rem 5em;
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    grid-template-columns: repeat( auto-fit, minmax(200px,auto));
+    grid-template-rows: 1fr;
+} 
+@media (max-width: 800px){
+
+    .pokeList-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "buttons"
+          "list";
+      }
+      .pokeList-buttons-changePage{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            grid-area: buttons;
+      } 
+
+    .pokeList {
+        grid-area: list;
+        width: 100%;
+        margin: 1rem 0 ;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

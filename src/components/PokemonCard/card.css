@@ -1,0 +1,185 @@
+:root{
+    --curve: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+.pokeCard{
+    width: 200px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 120px 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "name name name"
+    "image image image"
+    "stats stats stats"
+    "types types id";
+    border-radius: 1.5rem;
+    background: radial-gradient(113% 276.25% at 6.15% 9.5%, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.06) 99.48%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    backdrop-filter: blur(24px);
+    cursor: pointer;
+}
+.pokeCard-name{
+    grid-area: name; 
+    margin: 0.6rem;
+    text-align: center;
+}
+
+  .pokeCard-image-container{ 
+      display: flex;
+      justify-content: center;
+      grid-area: image; 
+      position: relative;
+
+    }
+.pokeCard-image{
+    filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.5));
+    width: auto;
+    height: 9rem;
+    position: absolute;
+    top:-75%
+}
+  .pokeCard-stat-container {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: flex-end;
+    grid-area: stats; 
+
+}
+
+.type-container { 
+    grid-area: types; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Id-container{ 
+    grid-area: id;
+    display: flex;
+    align-items: center; 
+}
+.Id-container p {
+    margin-right: 1.25rem;
+    font-size: 1.7rem;
+    color: rgba(3, 3, 3, 0.4);
+    font-weight: bold;
+    opacity: 0.7;
+}
+.pokeCard-stat{
+    text-align: center;
+}
+
+.pokeCard-stat span{
+    line-height: 19px;
+    font-size: .8rem;
+}
+
+.pokeCard-stat p{
+    line-height: 41px;
+    font-size: 1.7rem;
+    font-weight: 600
+}
+
+.colorType{
+    z-index: -1;
+    grid-column: 1/4;
+    grid-row: 2/5;
+    border-radius: 1.5rem;
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .4s;
+}
+
+.pokeCard:hover .colorType{
+    margin-top: -120px;
+}
+ .active{
+    border: none !important;
+    cursor: default;
+} 
+
+.active-background{
+   animation: active  .4s  0s 1 normal none;
+   margin-top: -120px;
+   
+}
+
+  @media (max-width: 800px){
+    .pokeCard{
+        width: 300px;
+        height: 95px;
+        grid-template-columns: 1.5fr 1.7fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          "image name types id"
+          "image stats stats stats";
+        border-radius: 1rem;
+    }
+    .colorType{
+        grid-column: 1/5;
+        grid-row: 2/2;
+        border-radius: 1rem;
+    }
+
+    .pokeCard-image{
+        width: auto;
+        height: 75px;
+        top:10%
+    }
+    .pokeCard-image-container{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: image; 
+      }
+
+      .pokeCard-name{
+          overflow: hidden;
+        margin: 0;
+        grid-area: name; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px !important;
+    }
+
+    .pokeCard:hover .colorType{
+        margin-top: -47px;
+    }
+     .active{
+        border: none !important;
+        cursor: default;
+    } 
+    
+    .active-background{
+       animation: active  .4s  0s 1 normal none;
+       margin-top: -47px;
+       
+    }
+
+    .pokeCard-stat span{
+        line-height: 10px;
+        font-size: .7rem;
+    }
+    
+    .pokeCard-stat p{
+        line-height: 15px;
+        font-size: 1rem;
+        font-weight: 600
+    }
+    .pokeCard-stat-container{
+        align-items: center;
+    }
+ 
+
+      .Id-container p {
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: bold;
+    }
+        .Id-container{
+            justify-content: center;
+        }
+
+  }
