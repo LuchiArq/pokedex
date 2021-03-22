@@ -5,7 +5,7 @@ import ButtonChangePage from '../Buttons/ButtonChangePage'
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner'
 import {usePokemonData} from '../../hooks/usePokemonData'
 import {SelectType} from '../../hooks/SelectType'
-import './pokeCardData.css'
+import './pokeCardDetails.css'
 
 export default function PokeCardDetails({match}) {
     
