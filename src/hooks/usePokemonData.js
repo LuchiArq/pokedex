@@ -8,10 +8,10 @@ export const  usePokemonData = (NameOrId,language) =>{
     const [PokeData, setPokeData] = useState()
     const [Loading,setLoading ] = useState(true)
     const history =  useHistory() 
+
     const searchPokemon=(pokemon)=>{
-        const url =  (window.location.pathname).split("/")[1]
         setLoading(true)
-        history.push(url === "list" || !url ? `pokemon/${pokemon}`:pokemon)
+        history.push( `/pokemon/${pokemon}`)
         window.location.reload()
         getFullDataPokemon(pokemon,language)
         .then(resp=>{
